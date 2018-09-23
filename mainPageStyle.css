@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+}
+
+@font-face {
+    font-family: "Montserrat Alternates";
+    src: url('fonts/MontserratAlternates-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('fonts/Roboto-Regular.ttf');
+}
+
+body {
+    margin: 0;
+    width: 360px;
+}
+
+#back {
+    height: 720px;
+    width: 360px;
+    margin: 0 auto;
+    padding-top: 22px;
+    overflow: hidden;
+}
+
+.back-bg {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.44) 0%, rgba(0, 0, 0, 0) 17.73%, rgba(0, 0, 0, 0) 35.33%, rgba(0, 0, 0, 0.86) 68.33%, rgba(0, 0, 0, 0.94) 100%);
+}
+
+.main {
+    height: 24px;
+    width: 320px;
+    margin: 0 20px 0;
+}
+
+.pen-feather-black-diagonal-shape {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    z-index: 5;
+}
+
+.pen-feather-shape {
+    height: 23.73px;
+    width: 23.83px;
+}
+
+.flycard {
+    height: 23px;
+    width: 76px;
+    color: #FFFFFF;
+    font-family: "Montserrat Alternates";
+    font-size: 18.48px;
+    font-weight: 500;
+    letter-spacing: 0.42px;
+    line-height: 23px;
+    margin-left: 4.17px;
+    margin-top: 0.95px;
+}
+
+.group {
+    margin-left: 197px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rectangle-7-top {
+    height: 2px;
+    width: 23px;
+    border-radius: 1.5px;
+    background-color: #FFFFFF;
+    margin-top: 1.95px;
+}
+
+.rectangle-7-bottom {
+    height: 2px;
+    width: 23px;
+    border-radius: 1.5px;
+    background-color: #FFFFFF;
+    margin-top: 6px;
+}
+
+.slides-container {
+    max-width: 100vw;
+    position: relative;
+    margin: auto;
+}
+
+.dot {
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.text {
+    height: 19px;
+    width: 100%;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 19px;
+    margin: 306px 0 0 0;
+    text-align: center;
+}
+
+.second-text {
+    height: 60px;
+    width: 100%;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    margin: 11px 0 0 0;
+}
+
+.group-2 {
+    height: 13px;
+    width: 103px;
+    margin: 42px auto 0;
+    display: flex;
+}
+
+.forward {
+    height: 7px;
+    width: 11px;
+    margin: 3.03px 0.03px 3.02px 6px;
+}
+
+.forward-shape {
+    height: 6.95px;
+    width: 10.97px;
+}
+
+.read-more {
+    height: 13px;
+    width: 86px;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 2.66px;
+    line-height: 13px;
+}
+
+.dot-slider {
+    height: 1px;
+    width: 80px;
+    margin: 28px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rectangle-20 {
+    height: 1px;
+    width: 20px;
+    opacity: 0.3;
+    background-color: #bbb;
+}
+
+.wrapper {
+    margin: 0 auto;
+    position: relative;
+    padding: 46px 0;
+}
+
+.oval-3 {
+    height: 76px;
+    width: 76px;
+    background-color: #FF6F00;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    position: inherit;
+    left: 143px;
+    z-index: 150;
+}
+
+.oval-4 {
+    height: 241px;
+    width: 662px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: inherit;
+    top: -60px;
+    left: -151px;
+    padding: 58px 0 0;
+    cursor: pointer;
+}
+
+.create-postcard-page {
+    position: inherit;
+    text-decoration: none;
+}
+
+.cloud-computing {
+    height: 26px;
+    width: 35px;
+    position: inherit;
+    top: -53.51px;
+    left: 163px;
+    z-index: 170;
+}
+
+.cloud-shape {
+    height: 25.44px;
+    width: 34.96px;
+}
+
+.create-postcard {
+    height: 19px;
+    width: 234px;
+    color: #263238;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main-active,
+.dot:hover {
+    background-color: #fff;
+    opacity: 1;
+}
+
+#picsSrc {
+    position: absolute;
+    top: 0;
+}
+
+.change-page {
+    display: flex;
+}
+
+.next,
+.previous {
+    width: 140px;
+    height: 570px;
+    z-index: 200;
+    position: absolute;
+}
+
+.next {
+    left: 220px;
+}
+
+.next:hover,
+.previous:hover {
+    cursor: pointer;
+}
+
+#main {
+    display: block;
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 530px) {
+    body {
+        width: 100%;
+    }
+    #back {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 44px;
+        height: 1840px;
+    }
+    #picsSrc {
+        width: 100%;
+    }
+    .main {
+        height: 48px;
+        width: 100%;
+        margin: 0 40px 0;
+    }
+    .pen-feather-black-diagonal-shape {
+        height: 70px;
+        width: 48px;
+    }
+    .pen-feather-shape {
+        height: 66px;
+        width: 66px;
+    }
+    .flycard {
+        height: 47px;
+        width: 152px;
+        font-size: 53.48px;
+        line-height: 66px;
+        margin-left: 8.17px;
+    }
+    .group {
+        margin-left: 590px;
+    }
+    .rectangle-7-top,
+    .rectangle-7-bottom {
+        height: 5px;
+        width: 60px;
+        margin-top: 6px;
+    }
+    .rectangle-7-bottom {
+        margin-top: 16px;
+    }
+    .next,
+    .previous {
+        height: 1530px;
+        width: 340px;
+    }
+    .next {
+        left: 640px;
+    }
+    .text {
+        height: 28px;
+        font-size: 40px;
+        line-height: 28px;
+        margin: 820px 0 0 0;
+    }
+    .second-text {
+        height: 120px;
+        font-size: 80px;
+        line-height: 80px;
+        margin: 40px 0 0 0;
+    }
+    .group-2 {
+        height: 35px;
+        width: 280px;
+        margin: 165px auto 0;
+    }
+    .read-more {
+        height: 35px;
+        width: 255px;
+        font-size: 27px;
+        letter-spacing: 9px;
+        line-height: 27px;
+    }
+    .forward {
+        height: 30px;
+        width: 30px;
+        margin: 4.03px 1.03px 4.02px 0;
+    }
+    .dot-slider {
+        height: 3px;
+        width: 215px;
+        margin: 75px auto 0;
+    }
+    .rectangle-20 {
+        height: 3px;
+        width: 55px;
+    }
+    .wrapper {
+        padding: 120px 0;
+    }
+    .oval-3 {
+        height: 200px;
+        width: 200px;
+        left: 395px;
+    }
+    .cloud-computing {
+        height: 52px;
+        width: 70px;
+        top: -130px;
+        left: 450px;
+    }
+    .cloud-shape {
+        height: 61.44px;
+        width: 87.96px;
+    }
+    .oval-4 {
+        height: 482px;
+        width: 1445px;
+        top: -135px;
+        left: -230px;
+        padding: 160px 0 0;
+    }
+    .create-postcard {
+        height: 38px;
+        width: 468px;
+        font-size: 45px;
+        line-height: 45px;
+    }
+}
+
+
+@media only screen and (min-device-width: 530px) and (max-device-width: 930px) {
+    body {
+        width: 100%;
+    }
+    #back {
+        height: 1530px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 44px;
+    }
+    #picsSrc {
+        width: 100%;
+        height: 1530px;
+    }
+    .main {
+        height: 70px;
+        width: 100%;
+        margin: 18px 0 0 55px;
+    }
+    .pen-feather-black-diagonal-shape {
+        height: 70px;
+        width: 70px;
+    }
+    .pen-feather-shape {
+        height: 63.73px;
+        width: 63.83px;
+    }
+    .flycard {
+        height: 70px;
+        width: 220px;
+        font-size: 52px;
+        line-height: 60px;
+        margin-left: 11.17px;
+    }
+    .group {
+        margin-left: 534px;
+    }
+    .rectangle-7-top,
+    .rectangle-7-bottom {
+        height: 5px;
+        width: 65px;
+        margin-top: 3px;
+    }
+    .rectangle-7-bottom {
+        margin-top: 18px;
+    }
+    .next,
+    .previous {
+        width: 340px;
+        height: 1130px;
+    }
+    .next {
+        left: 640px;
+    }
+    .text {
+        height: 28px;
+        font-size: 30px;
+        line-height: 28px;
+        margin: 612px 0 0 0;
+    }
+    .second-text {
+        height: 120px;
+        font-size: 60px;
+        line-height: 60px;
+        margin: 22px 0 0 0;
+    }
+    .group-2 {
+        height: 26px;
+        width: 206px;
+        margin: 84px auto 0;
+    }
+    .read-more {
+        height: 26px;
+        width: 172px;
+        font-size: 22px;
+        letter-spacing: 4.66px;
+        line-height: 26px;
+    }
+    .forward {
+        height: 14px;
+        width: 22px;
+    }
+    .dot-slider {
+        height: 3px;
+        width: 160px;
+        margin: 56px auto 0;
+    }
+    .rectangle-20 {
+        height: 3px;
+        width: 40px;
+    }
+    .wrapper {
+        padding: 92px 0;
+    }
+    .oval-3 {
+        height: 152px;
+        width: 152px;
+        left: 415px;
+    }
+    .cloud-computing {
+        height: 52px;
+        width: 70px;
+        top: -100.51px;
+        left: 455px;
+    }
+    .cloud-shape {
+        height: 50.44px;
+        width: 68.96px;
+    }
+    .oval-4 {
+        height: 482px;
+        width: 1324px;
+        top: -110px;
+        left: -175px;
+        padding: 116px 0 0;
+    }
+    .create-postcard {
+        height: 38px;
+        width: 468px;
+        font-size: 32px;
+        line-height: 38px;
+    }
+}

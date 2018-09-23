@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="mainPageStyle.css">
+    <link rel="stylesheet" href="editPostcardStyle.css">
+    <meta charset="UTF-8">
+    <title>Flycard</title>
+</head>
+
+<body>
+    <div id="back" class="back-bg">
+        <div id="main">
+            <img src="img/img0.jpg" alt="slide" id="picsSrc">
+            <header class="main">
+                <div class="pen-feather-black-diagonal-shape">
+                    <img class="pen-feather-shape" src="img/1.png" alt="Feather-pen">
+                    <p class="flycard">Flycard</p>
+                    <div class="group">
+                        <div class="rectangle-7-top"></div>
+                        <div class="rectangle-7-bottom"></div>
+                        <div class="rectangle-7-bottom"></div>
+                    </div>
+                </div>
+            </header>
+            <div class="change-page">
+                <div class="previous" onclick="plusSlides(-1)"></div>
+                <div class="next" onclick="plusSlides(1)"></div>
+            </div>
+            <div class="slides-container">
+                <div class="slides fade">
+                    <p class="text">About</p>
+                    <div class="second-text">Create your own <br> postcard.</div>
+                </div>
+                <div class="slides fade">
+                    <p class="text">Is it worth money?</p>
+                    <div class="second-text">Try it for free <br> and check!</div>
+                </div>
+                <div class="slides fade">
+                    <p class="text">How it works?</p>
+                    <div class="second-text">Shot, edit, <br> send.</div>
+                </div>
+            </div>
+            <div class="group-2">
+                <p class="read-more">READ MORE</p>
+                <img src="img/forward-arrow.png" alt="forward" class="forward-shape, forward">
+            </div>
+            <div class="dot-slider">
+                <div class="rectangle-20 dot main-active" onclick="currentSlide(1)"></div>
+                <div class="rectangle-20 dot" onclick="currentSlide(2)"></div>
+                <div class="rectangle-20 dot" onclick="currentSlide(3)"></div>
+            </div>
+            <div class="wrapper">
+                <div class="oval-3"></div>
+                <div class="cloud-computing">
+                    <img src="img/cloud.png" alt="cloud" class="cloud-shape">
+                </div>
+                <div class="oval-4" onclick="toggle()">
+                    <div class="create-postcard">Create postcard</div>
+                </div>
+            </div>
+        </div>
+        <div id="edit">
+            <div class="header-edit">
+                <div class="pen-feather-black-diagonal-shape-edit">
+                    <img class="pen-feather-shape-edit" src="img/2.png" alt="Feather-pen">
+                    <div class="edit-postcard">
+                        <p class="edit-top">Edit postcard</p>
+                    </div>
+                    <div class="group-edit">
+                        <div class="rectangle-7-top-edit"></div>
+                        <div class="rectangle-7-bottom-edit"></div>
+                        <div class="rectangle-7-bottom-edit"></div>
+                    </div>
+                </div>
+            </div>
+            <section class="main-img">
+                <img src="img/bIgIdlN_2as.jpg" alt="picture" id="pic">
+                <div class="inside-main-img">
+                </div>
+            </section>
+            <div class="slider-edit">
+                <div class="filter">
+                    <p>FILTER</p>
+                </div>
+                <div class="edit">
+                    <p>EDIT</p>
+                </div>
+                <div class="rectangle-16"></div>
+            </div>
+            <div class="choose-filters" id="choose-filters">
+                <div class="filter-wrapper" id="filter0">
+                    <img src="img/pexels-photo-466685.jpeg" alt="pic" class="filters filter0" onclick="currentFilter(1)">
+                    <p class="filter-name text-active">Normal</p>
+                    <div class="choose window-active"></div>
+                </div>
+                <div class="filter-wrapper" id="filter1">
+                    <img src="img/pexels-photo-466685.jpeg" alt="pic" class="filters filter1" onclick="currentFilter(2)">
+                    <p class="filter-name">Saturate</p>
+                    <div class="choose"></div>
+                </div>
+                <div class="filter-wrapper" id="filter2">
+                    <img src="img/pexels-photo-466685.jpeg" alt="pic" class="filters filter2" onclick="currentFilter(3)">
+                    <p class="filter-name">Colors</p>
+                    <div class="choose"></div>
+                </div>
+                <div class="filter-wrapper" id="filter3">
+                    <img src="img/pexels-photo-466685.jpeg" alt="pic" class="filters filter3" onclick="currentFilter(4)">
+                    <p class="filter-name">Colors v2</p>
+                    <div class="choose"></div>
+                </div>
+                <div class="filter-wrapper" id="filter4">
+                    <img src="img/pexels-photo-466685.jpeg" alt="pic" class="filters filter4" onclick="currentFilter(5)">
+                    <p class="filter-name">Invert</p>
+                    <div class="choose"></div>
+                </div>
+                <div class="filter-wrapper" id="filter5">
+                    <img src="img/pexels-photo-466685.jpeg" alt="pic" class="filters filter5" onclick="currentFilter(6)">
+                    <p class="filter-name">Greyscale</p>
+                    <div class="choose"></div>
+                </div>
+                <div class="filter-wrapper" id="filter6">
+                    <img src="img/pexels-photo-466685.jpeg" alt="pic" class="filters filter6" onclick="currentFilter(7)">
+                    <p class="filter-name">Sepia</p>
+                    <div class="choose"></div>
+                </div>
+                <div class="filter-wrapper" id="filter7">
+                    <img src="img/pexels-photo-466685.jpeg" alt="pic" class="filters filter7" onclick="currentFilter(8)">
+                    <p class="filter-name">Darken</p>
+                    <div class="choose"></div>
+                </div>
+                <div class="filter-wrapper" id="filter8">
+                    <img src="img/pexels-photo-466685.jpeg" alt="pic" class="filters filter8" onclick="currentFilter(9)">
+                    <p class="filter-name">Contrast</p>
+                    <div class="choose"></div>
+                </div>
+            </div>
+            <footer>
+                <img src="img/undo.png" alt="" class="undo" onclick="toggle()">
+                <p class="add-text">ADD TEXT</p>
+                <img src="img/forward-arrow-blue.png" alt="forward arrow" class="arrow-text">
+            </footer>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

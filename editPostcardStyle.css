@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Montserrat Alternates";
+    src: url('fonts/MontserratAlternates-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('fonts/Roboto-Regular.ttf');
+}
+
+.back-bg-2 {
+    background: #FFFFFF;
+}
+
+.window-back {
+    height: 720px;
+    width: 360px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    padding-top: 22px;
+}
+
+.header-edit {
+    height: 24px;
+    width: 320px;
+    margin: 0 20px;
+}
+
+.pen-feather-black-diagonal-shape-edit {
+    display: flex;
+}
+
+.pen-feather-shape-edit {
+    height: 23.73px;
+    width: 23.83px;
+}
+
+.edit-top {
+    height: 19px;
+    width: 104px;
+}
+
+.edit-postcard {
+    color: #263238;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 19px;
+    text-align: center;
+    margin: 3.95px 85px 0.78px 84.17px;
+}
+
+.group-edit {
+    display: flex;
+    flex-direction: column;
+}
+
+.rectangle-7-top-edit {
+    height: 2px;
+    width: 23px;
+    border-radius: 1.5px;
+    background-color: #1383DC;
+    margin-top: 1.95px;
+}
+
+.rectangle-7-bottom-edit {
+    height: 2px;
+    width: 23px;
+    border-radius: 1.5px;
+    background-color: #1383DC;
+    margin-top: 6px;
+}
+
+.main-img {
+    height: 259px;
+    width: 360px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 23px 0 0;
+    padding: 24px 27px 28px 25px;
+}
+
+.inside-main-img {
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.4);
+    height: 207px;
+    width: 310px;
+    border: 1px dashed #FFFFFF;
+    border-radius: 11px;
+    position: absolute;
+}
+
+.slider-edit {
+    height: 70px;
+}
+
+.filter {
+    height: 16px;
+    width: 53px;
+    color: #263238;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 16px;
+    text-align: center;
+    display: inline-block;
+    margin: 24px 0 0 95px;
+}
+
+.edit {
+    height: 16px;
+    width: 36px;
+    color: #90A4AE;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 16px;
+    text-align: center;
+    display: inline-block;
+    margin: 24px 0px 0 65px;
+}
+
+.rectangle-16 {
+    height: 3px;
+    width: 25px;
+    background-color: #E45F0D;
+    margin: 9px 0 0 109px;
+}
+
+.choose-filters {
+    height: 261px;
+    background-color: #F4F7F9;
+    border-top: 1px solid #D8DFE4;
+    border-bottom: 1px solid #D8DFE4;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.filter-wrapper {
+    height: 110px;
+    margin: 35px 20px 3px 1px;
+    display: inline-block;
+}
+
+.filters {
+    height: 70px;
+    width: 70px;
+    box-shadow: 0 12px 20px 0 rgba(71, 89, 98, 0.25);
+    border-radius: 35px;
+    margin: 2px auto;
+    display: inline-block;
+}
+
+.filter0 {
+    filter: none;
+}
+
+.filter1 {
+    filter: saturate(4);
+}
+
+.filter2 {
+    filter: hue-rotate(195deg);
+}
+
+.filter3 {
+    filter: hue-rotate(395deg);
+}
+
+.filter4 {
+    filter: invert(.8);
+}
+
+.filter5 {
+    filter: grayscale(1);
+}
+
+.filter6 {
+    filter: sepia(80%);
+}
+
+.filter7 {
+    filter: brightness(.7);
+}
+
+.filter8 {
+    filter: contrast(1.3);
+}
+
+#pic {
+    height: 259px;
+    width: 360px;
+    position: absolute;
+    top: 69px;
+    left: 0;
+}
+
+.filter-name {
+    height: 13px;
+    margin: 14px auto 0;
+    color: #B0BEC5;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 13px;
+    text-align: center;
+}
+
+.window-active {
+    box-sizing: border-box;
+    height: 76px;
+    width: 76px;
+    border: 3px solid #FFFFFF;
+    border-radius: 35px;
+    color: #263238;
+    margin: -106px -3px 0;
+}
+
+.text-active {
+    color: #263238;
+    margin: 14px 0 0;
+}
+
+footer {
+    width: 360px;
+    height: 65px;
+    display: flex;
+}
+
+.undo {
+    height: 16.62px;
+    width: 13px;
+    margin: 23px 0 0 21.03px;
+    cursor: pointer;
+}
+
+.add-text {
+    height: 18px;
+    width: 70px;
+    color: #1383DC;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: right;
+    margin: 24px 0 0 207.01px;
+}
+
+.arrow-text {
+    height: 14px;
+    width: 13px;
+    margin: 25px 0 0 11px;
+}
+
+#edit {
+    display: none;
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 530px) {
+    body {
+        width: 100vw;
+    }
+    #back {
+        width: 100vw;
+        margin: 0 auto;
+        padding-top: 44px;
+        height: 1960px;
+    }
+    .header-edit {
+        height: 70px;
+        width: 100vw;
+        margin: 16px 55px;
+    }
+    .pen-feather-black-diagonal-shape-edit {
+        height: 70px;
+        width: 48px;
+    }
+    .pen-feather-shape-edit {
+        height: 66px;
+        width: 66px;
+    }
+    .edit-postcard {
+        font-size: 43px;
+        line-height: 43px;
+        margin: 14.95px 85px 0.78px 97.17px;
+    }
+    .edit-top {
+        height: 43px;
+        width: 545px;
+    }
+    .group-edit {
+        margin-left: 16px;
+    }
+    .rectangle-7-top-edit {
+        height: 5px;
+        width: 60px;
+        margin-top: 6px;
+    }
+    .rectangle-7-bottom-edit {
+        height: 5px;
+        width: 60px;
+        margin-top: 16px;
+    }
+    .main-img {
+        height: 700px;
+        width: 100vw;
+        margin: 60px 0 0;
+        padding: 65px 27px 28px 70px;
+    }
+    #pic {
+        height: 700px;
+        width: 100vw;
+        top: 190px;
+    }
+    .inside-main-img {
+        height: 560px;
+        width: 840px;
+        border-radius: 25px;
+        border: 3px dashed #FFFFFF;
+        box-shadow: 0px 0px 240px 60px rgba(0, 0, 0, 0.4);
+    }
+    .slider-edit {
+        height: 40px;
+        margin: 65px 165px 90px;
+    }
+    .filter,
+    .edit {
+        height: 40px;
+        font-size: 40px;
+        letter-spacing: 4px;
+        line-height: 40px;
+        margin: 0px 0 0 95px;
+    }
+    .edit {
+        margin: 0px 0px 0 270px;
+    }
+    .rectangle-16 {
+        height: 7px;
+        width: 70px;
+        margin: 30px 0 0 130px;
+    }
+    .choose-filters {
+        height: 700px;
+    }
+    .filter-wrapper {
+        height: 350px;
+    }
+    .filters {
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        margin: 60px 0 0 10px;
+    }
+    .filter-name {
+        height: 30px;
+        margin: 50px auto 0;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .text-active {
+        margin: 50px 0 0;
+    }
+    .window-active {
+        height: 220px;
+        width: 220px;
+        border: 30px solid #FFFFFF;
+        border-radius: 105px;
+        margin: -293px 0 0;
+    }
+    footer {
+        width: 100vw;
+        height: 170px;
+    }
+    .undo {
+        height: 45px;
+        width: 40px;
+        margin: 67px 0 0 55.03px;
+    }
+    .add-text {
+        height: 45px;
+        width: 250px;
+        font-size: 45px;
+        line-height: 45px;
+        margin: 73px 0 0 510.01px;
+    }
+    .arrow-text {
+        height: 45px;
+        width: 35px;
+        margin: 73px 0 0 18px;
+    }
+}
+
+@media only screen and (min-device-width: 530px) and (max-device-width: 930px) {
+    body {
+        width: 100vw;
+    }
+    #back {
+        height: 1530px;
+        width: 100vw;
+        margin: 0 auto;
+        padding-top: 44px;
+    }
+    .header-edit {
+        height: 75px;
+        width: 100%;
+        margin: 15px 0 0 55px;
+    }
+    .pen-feather-shape-edit {
+        height: 63.73px;
+        width: 63.83px;
+    }
+    .edit-postcard {
+        font-size: 40px;
+        line-height: 40px;
+        margin: 19px 85px 0.78px 173.17px;
+    }
+    .edit-top {
+        height: 55px;
+        width: 395px;
+    }
+    .rectangle-7-top-edit {
+        height: 5px;
+        width: 65px;
+        margin: 5.95px 0 0 90px;
+    }
+    .rectangle-7-bottom-edit {
+        height: 5px;
+        width: 65px;
+        margin: 17px 0 0 90px;
+    }
+    .main-img {
+        height: 700px;
+        width: 100%;
+        margin: 20px 0 0;
+        padding: 65px 0 0 70px;
+    }
+    #pic {
+        height: 700px;
+        width: 100%;
+        top: 154px;
+    }
+    .inside-main-img {
+        box-shadow: 0px 0px 115px 14px rgba(0, 0, 0, 0.4);
+        height: 560px;
+        width: 840px;
+        border: 3px dashed #FFFFFF;
+        border-radius: 25px;
+    }
+    .slider-edit {
+        height: 130px;
+    }
+    .filter {
+        height: 38px;
+        width: 145px;
+        font-size: 38px;
+        letter-spacing: 5px;
+        line-height: 38px;
+        margin: 30px 0 0 260px;
+    }
+    .edit {
+        height: 38px;
+        width: 145px;
+        font-size: 38px;
+        letter-spacing: 5px;
+        line-height: 38px;
+        margin: 0 0 0 160px;
+    }
+    .rectangle-16 {
+        height: 7px;
+        width: 68px;
+        margin: 28px 0 0 297px;
+    }
+    .filter-wrapper {
+        height: 350px;
+        margin: 0 20px 3px 1px;
+    }
+    .choose-filters {
+        height: 420px;
+    }
+    .filters {
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        margin: 65px 25px 0 3px;
+    }
+    .text-active {
+        margin: 45px 0px 0px;
+    }
+    .filter-name {
+        height: 30px;
+        margin: 45px 0 0;
+        font-size: 30px;
+        line-height: 30px;
+        width: 190px;
+    }
+    .window-active {
+        height: 215px;
+        width: 215px;
+        border: 15px solid #FFFFFF;
+        border-radius: 115px;
+        margin: -285px -4px 0;
+    }
+    footer {
+        width: 100%;
+        height: 130px;
+    }
+    .undo {
+        height: 41.62px;
+        width: 33px;
+        margin: 39px 0 0 56.03px;
+    }
+    .add-text {
+        height: 45px;
+        width: 410px;
+        font-size: 45px;
+        line-height: 45px;
+        margin: 40px 0 0 360px;
+    }
+    .arrow-text {
+        height: 45px;
+        width: 35px;
+        margin: 40px 0 0 17px;
+    }
+}
